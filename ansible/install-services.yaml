@@ -1,0 +1,10 @@
+---
+
+- name: "edit apple.txt and restart services" 
+  hosts: servers
+  user: ansible-node
+  become: true
+
+  roles:
+
+     - nginx
