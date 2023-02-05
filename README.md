@@ -16,9 +16,9 @@ Ansible Lab
 	7. Check Inventory
 		○ ansible-inventory --list -y
 	8. Test Connection
-		○ ansible all -m ping -u root
+		○ ansible all -m ping -u ansible-node
 	9. Test ad-hoc commands
-		○ ansible all -a "df -h" -u root
+		○ ansible all -a "df -h" -u ansible-node
 	10. Check nginx in both servers
 		○ systemctl status nginx
 	11. Run Ansible playbook to install nginx
