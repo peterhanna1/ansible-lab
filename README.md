@@ -29,8 +29,11 @@ Ansible Lab
 INVENTORY
 
 [servers]
+
 server1 ansible_host=x.x.x.x
+
 server2 ansible_host=x.x.x.x
 
 [all:vars]
+
 ansible_python_interpreter=/usr/bin/python3
