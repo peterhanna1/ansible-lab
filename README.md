@@ -22,6 +22,7 @@ Ansible Lab
 	10. Check nginx in both servers
 		○ systemctl status nginx
 	11. Run Ansible playbook to install nginx
+		○ ansible-playbook install-services.yaml -u ansible-node  
 	12. Check nginx in both servers
 		○ systemctl status nginx
 
@@ -29,11 +30,8 @@ Ansible Lab
 INVENTORY
 
 [servers]
-
 server1 ansible_host=x.x.x.x
-
 server2 ansible_host=x.x.x.x
 
 [all:vars]
-
 ansible_python_interpreter=/usr/bin/python3
