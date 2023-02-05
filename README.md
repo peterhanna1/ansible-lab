@@ -1,5 +1,4 @@
-# ansible-lab
-Quick introduction about ansible
+Ansible Lab
 
 	1. Create Ansible-Control VM (password SSH)
 	2. Create 2 Ansible-Node VMs (password SSH)
@@ -21,7 +20,17 @@ Quick introduction about ansible
 	9. Test ad-hoc commands
 		○ ansible all -a "df -h" -u root
 	10. Check nginx in both servers
-		○ sudo systemctl config nginx
+		○ systemctl status nginx
 	11. Run Ansible playbook to install nginx
-	12. Check nginx in both servers again
-    ○ sudo systemctl config nginx
+	12. Check nginx in both servers
+		○ systemctl status nginx
+
+
+INVENTORY
+
+[servers]
+server1 ansible_host=x.x.x.x
+server2 ansible_host=x.x.x.x
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
