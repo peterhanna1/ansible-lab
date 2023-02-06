@@ -1,6 +1,6 @@
 ---
 
-- name: "edit apple.txt and restart services" 
+- name: "install services" 
   hosts: servers
   user: ansible-node
   become: true
